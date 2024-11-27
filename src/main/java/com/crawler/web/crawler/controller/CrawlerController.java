@@ -128,4 +128,8 @@ public class CrawlerController {
         return new ResponseEntity<String>("This token is invalid " + token, HttpStatus.OK);
     }
 
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
+    }
 }
